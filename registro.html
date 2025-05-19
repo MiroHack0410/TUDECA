@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - TUDECA</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="menu-container">
+      <button class="menu-button">Menú ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Hoteles</a>
+        <a href="#">Restaurantes</a>
+        <a href="#">Atracciones</a>
+        <a href="#">Reservaciones</a>
+      </div>
+    </div>
+    <h1>TUDECA</h1>
+    <div class="user-icon">👤</div>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <form action="registrar.php" method="POST" class="form-box">
+        <h2>Registro</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+        <label>Sexo:</label>
+        <div class="sexo-options">
+          <label><input type="radio" name="sexo" value="M" required> Masculino</label>
+          <label><input type="radio" name="sexo" value="F"> Femenino</label>
+          <label><input type="radio" name="sexo" value="O"> Otro</label>
+        </div>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <button type="submit" class="signin-btn">REGISTRARME</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
